@@ -148,6 +148,7 @@ const authController = {
                 expiresIn: "1d",
               });
           
+              console.log("this is redirect url : " , `${process.env.Frontend_Base_URL}/auth/success?token=${token}`)
               res.redirect(`${process.env.Frontend_Base_URL}/auth/success?token=${token}`);
         } catch (error) {
             console.error("Google OAuth Error:", error);
