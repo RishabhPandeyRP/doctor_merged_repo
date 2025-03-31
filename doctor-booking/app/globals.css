@@ -1,0 +1,17 @@
+:root {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+
+  button {
+    font-family: inherit; 
+  }
+  
+  
+body{
+    width: 99vw;
+    height: 100vh;
+    border: 0px solid green;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

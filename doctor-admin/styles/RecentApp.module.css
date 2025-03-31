@@ -1,0 +1,86 @@
+.recentDiv{
+    width: 46%;
+    border: 0px solid green;
+    height: 90%;
+}
+
+.recentApp{
+    height : 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 1%;
+}
+
+.appStat{
+    border: 0px solid #1c4a2a;
+    /* background-color: #1c4a2a; */
+    color: #1c4a2a;
+    /* display: flex;
+    justify-content: space-between; */
+    /* padding: 2% 5%; */
+    /* border-radius: 10px; */
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0% auto;
+    margin-bottom: 4%;
+    letter-spacing: 1px;
+    /* height: 20%; */
+}
+
+.appStat hr{
+  margin-top: 0.5%;
+  color: #1c4a2a;
+}
+
+.appDiv{
+    display: flex;
+    border: 0px solid red;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* height: 15%; */
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+}
+
+.patientname{
+    font-size: 20px;
+    color: #373737;
+}
+
+.doctorname{
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.date{
+    font-size: 16px;
+    color: #5b5b5b;
+}
+
+@media screen and (max-width: 1024px) {
+    .appStat{
+     font-size: 26px;
+    }
+
+    .patientname{
+        font-size: 18px;
+        color: #373737;
+    }
+    
+    .doctorname{
+        font-size: 14px;
+        color: #8c8c8c;
+    }
+    
+    .date{
+        font-size: 14px;
+        color: #5b5b5b;
+    }
+
+   }

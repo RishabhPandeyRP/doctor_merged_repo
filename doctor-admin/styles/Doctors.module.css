@@ -1,0 +1,137 @@
+.docDiv{
+    box-sizing: border-box;
+    border: 0px solid red;
+    padding: 1% 4%;
+    width: 100%;
+}
+
+.docStat{
+    border: 1px solid #1c4a2a;
+    background-color: #1c4a2a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    width: 93%;
+    margin: 0% auto;
+    margin-bottom: 2%;
+}
+
+.docContainer{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    margin : 0 auto;
+    border: 0px solid red;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.docContainer::-webkit-scrollbar {
+    display: none;
+}
+
+
+.pagination{
+    display: flex;
+    width: 20%;
+    border: 0px solid red;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .pageBtn{
+    border: 0px solid #1c4a2ab8;
+    background-color: #31443728;
+    /* width: 45px;
+    height: 45px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .pageBtnValue{
+    border: 0px solid #1c4a2ab8;
+    background-color: #1c4a2a20;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .loader{
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1200px){
+    
+    .pagination {
+      width: 40%;
+  }
+  
+  .pageBtn {
+      padding: 0 15px;
+      font-size: 14px;
+  }
+
+  .pageBtnValue {
+      width: 40px;
+      height: 40px;
+  }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+
+    .pagination {
+      width: 60%;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  .pageBtn {
+      padding: 0 10px;
+      font-size: 13px;
+  }
+
+  .pageBtnValue {
+      width: 35px;
+      height: 35px;
+      font-size: 14px;
+  }
+  
+  .Loader {
+      font-size: 14px;
+      gap: 5px;
+  }
+  }
+
+  @media screen and (max-width: 480px) {
+    .pagination {
+        width: 80%;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .pageBtn {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .pageBtnValue {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

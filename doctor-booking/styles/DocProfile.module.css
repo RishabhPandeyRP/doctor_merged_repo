@@ -1,0 +1,165 @@
+.profileDiv{
+    border: 0px solid red;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.profileHeader{
+    width: 100%;
+    background-color: #1c4a2a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 0;
+    border-radius: 15px;
+}
+
+.profileTitle{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.profileDesc{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profileContent{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin: 35px 0;
+    padding: 0 5%;
+}
+
+.profileContentLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.profileImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #1c4a2a;
+    background-color: rgb(232, 232, 232);
+    position: relative;
+    overflow: hidden;
+}
+
+.profileImg img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profileRatingBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileRatingTitle{
+    color: rgba(0, 0, 0, 0.578);
+}
+
+.profileRatingStars{
+    color: rgb(227, 201, 7);
+}
+
+.profileName{
+    font-size: 29px;
+    font-weight: 700;
+    color: #1c4a2a;
+}
+
+.profileData{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    letter-spacing: 1.1;
+}
+.profileDataKeys{
+border: 0px solid red;
+width: 20%;
+font-size: 16px;
+font-weight: 600;
+color: rgba(0, 0, 0, 0.638);
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.about{
+    margin-top: 10%;
+}
+
+.profileDataValues{
+    border: 0px solid red;
+    width: 70%;
+    font-size: 16px;
+font-weight: 400;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.profileDiseases{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profileDiseasesCard{
+    border: 0px solid #1c4a2a;
+    color: #1c4a2a;
+    background-color: #1c4a2a20;
+    border-radius: 15px;
+    width: 150px;
+    padding: 4px 9px;
+    text-align: center;
+}
+
+.profileBtn{
+    width: 100%;
+    background-color: #1c4a2a;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 300ms , background-color 200ms;
+}
+
+.profileBtn:hover{
+    transform: translateY(-5%);
+    background-color: #1c4a2afb;
+}
+
+@media screen and (max-width:1200px){
+    .profileContent{
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profileDataKeys{
+        width: 30%;
+        gap: 30px;
+    }
+    .profileDataValues{
+        gap: 30px;
+    }
+    .profileDiseasesCard{
+        width: 150px;
+        padding: 4px 15px;
+    }
+    .profileName{
+        font-size: 35px;
+        margin-bottom: 5%;
+    }
+}

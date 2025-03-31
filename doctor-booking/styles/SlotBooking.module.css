@@ -1,0 +1,282 @@
+.slotDiv{
+    border: 0px solid red;
+    box-sizing: border-box;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.slotForm{
+    border: 1px solid white;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2%; */
+    justify-content: space-between;
+
+}
+
+.slotHeader{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.slotHeaderTitle{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+
+.slotTypeBox{
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.slotType{
+    width: 50%;
+    border: 1px solid green;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1.5% 1%;
+    text-align: center;
+}
+
+.slotTypeBox div:nth-child(1){
+    border-radius: 5px 0px 0px 5px;
+}
+
+.slotTypeBox div:nth-child(2){
+    border-radius: 0px 5px 5px 0px;
+}
+
+.slotActive{
+    width: 50%;
+    background-color: #1c4a2a;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1.5% 1%;
+    text-align: center;
+}
+
+.slotLocation{
+    border: 1px solid rgba(0, 0, 0, 0.317);
+    border-radius: 5px;
+    padding: 1.5% 2%;
+    text-align: center;
+    font-size: clamp(15px, 3vw, 17px);
+    font-weight: 500;
+}
+
+.slotMonth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border: 0px solid red;
+    margin: 0 auto;
+    gap: 2%;
+}
+
+.slotLeft{
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.datesWrapper{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    height: 13%;
+    box-sizing: border-box;
+    border: 0px solid red;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.datesWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.dateCard {
+    border: 1px solid rgb(143, 143, 143);
+    flex-shrink: 0;
+    width: 11%;
+    height: 90%;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .dateCard.active, .active {
+    background-color: #1b5e20;
+    color: white;
+  }
+  
+  .day {
+    font-size: clamp(10px, 2.5vw, 12px);
+    font-weight: 500;
+  }
+  
+  .date {
+    font-size: clamp(16px, 3vw, 18px);
+    font-weight: 600;
+  }
+  
+  .month {
+    font-size: clamp(10px, 2.5vw, 12px);
+  }
+
+  .morning , .noon{
+    font-size: clamp(15px, 3vw, 17px);
+    font-weight: 700;
+  }
+
+  .slotCardSuperWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .slotCardWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .slotCardsBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .slotCards{
+    background-color: #1b5e1f1e;
+    border: 1px solid #1c4a2a7e;
+    color: #1c4a2a;
+    padding: 1.5% 4%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .activeSlotCard{
+    background-color: #7b7b7b45;
+    color: #3c3c3c94;
+    padding: 1.5% 4%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .bookBtn{
+    background-color: #1c4a2a;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2% 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 150ms
+  }
+
+  .bookBtn:hover{
+    transform: translateY(-3%);
+  }
+
+  .Loader{
+    border: 0px solid red;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #8C8C8C;
+  }
+
+  .slotIconWrapper{
+    display: flex;
+    border: 0px solid red;
+    width: 25%;
+    gap: 6%;
+  }
+
+  .morningImg{
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+
+  .slotIconHeader{
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(15px, 3vw, 17px);
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .slotForm {
+      padding: 5%;
+      gap: 25px;
+    }
+    
+    .slotMonth {
+      width: 50%;
+    }
+
+    .slotLeft{
+      
+      width: 23px;
+      height: 23px;
+      
+  }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .slotForm {
+      padding: 6%;
+    }
+    
+    .slotMonth {
+      width: 50%;
+    }
+    
+    .dateCard {
+      width: 60px;
+    }
+
+    .slotLeft{
+      
+      width: 21px;
+      height: 21px;
+      
+  }
+    
+    
+  }

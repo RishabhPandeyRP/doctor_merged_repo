@@ -1,0 +1,112 @@
+ [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "specialization": "Cardiologist",
+      "experience": "15+ years",
+      "rating": 5,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Heart Disease", "Hypertension", "Arrhythmia"]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Chen",
+      "specialization": "Neurologist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Alzheimer's", "Parkinson's", "Epilepsy"]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Emily Williams",
+      "specialization": "Dermatologist",
+      "experience": "5-10 years",
+      "rating": 4,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Eczema", "Psoriasis", "Skin Cancer"]
+    },
+    {
+      "id": 4,
+      "name": "Dr. James Rodriguez",
+      "specialization": "Orthopedic Surgeon",
+      "experience": "15+ years",
+      "rating": 5,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Arthritis", "Joint Pain", "Fractures"]
+    },
+    {
+      "id": 5,
+      "name": "Dr. Lisa Patel",
+      "specialization": "Pediatrician",
+      "experience": "3-5 years",
+      "rating": 3,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Asthma", "Common Cold", "Childhood Obesity"]
+    },
+    {
+      "id": 6,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"]
+    },
+    {
+      "id": 7,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"]
+    },
+    {
+      "id": 8,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"]
+    },
+    {
+      "id": 9,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"]
+    },
+    {
+      "id": 10,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"]
+    },
+    {
+      "id": 11,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"]
+    }
+  ]

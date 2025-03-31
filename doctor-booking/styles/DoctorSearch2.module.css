@@ -1,0 +1,186 @@
+.docDiv {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .docMain {
+    padding: 40px 0;
+    font-family: var(--font-montserrat);
+  }
+  
+  .docTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  .docSearch {
+    margin: 20% auto;
+    margin-top: 19%;
+    width: 80%;
+    border: 0px solid green;
+  }
+  
+  .docContent {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10px;
+  }
+  
+  .docTitleAvail {
+    width: fit-content;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  
+  .docDesc {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8C8C8C;
+  }
+  
+  .docContentSection {
+    width: 100%;
+  }
+  
+  .docContentSectionInner {
+    display: flex;
+    gap: 30px;
+    border: 0px solid red;
+  }
+
+  .pagination{
+    display: flex;
+    width: 20%;
+    border: 0px solid red;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .pageBtn{
+    border: 0px solid #1c4a2ab8;
+    background-color: #31443728;
+    /* width: 45px;
+    height: 45px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .pageBtnValue{
+    border: 0px solid #1c4a2ab8;
+    background-color: #1c4a2a20;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .Loader{
+    border: 0px solid red;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #8C8C8C;
+  }
+
+  
+  
+  @media screen and (max-width: 1200px){
+    .docContentSectionInner {
+      flex-direction: column;
+    }
+
+    .pagination {
+      width: 40%;
+  }
+  
+  .pageBtn {
+      padding: 0 15px;
+      font-size: 14px;
+  }
+
+  .pageBtnValue {
+      width: 40px;
+      height: 40px;
+  }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .docTitleAvail{
+      border: 0px solid red;
+      font-size: 45px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .docDesc {
+      /* width: fit-content; */
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0 auto;
+      text-align: center;
+      /* color: #8C8C8C; */
+    }
+    .docContentSectionInner {
+      flex-direction: column;
+    }
+
+    .pagination {
+      width: 60%;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  .pageBtn {
+      padding: 0 10px;
+      font-size: 13px;
+  }
+
+  .pageBtnValue {
+      width: 35px;
+      height: 35px;
+      font-size: 14px;
+  }
+  
+  .Loader {
+      font-size: 14px;
+      gap: 5px;
+  }
+  }
+
+  @media screen and (max-width: 480px) {
+    .pagination {
+        width: 80%;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .pageBtn {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .pageBtnValue {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

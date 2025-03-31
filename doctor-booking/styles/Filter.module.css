@@ -1,0 +1,91 @@
+.filterDiv{
+    width: 20%;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgbs(0,0,0,0.1);
+}
+
+.filterHeaders{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.filterHeaders h2{
+    margin: 0;
+    font-size: 20px;
+    color: #2d3748;
+}
+
+.rstBtn{
+    background: none;
+    border: none;
+    color: #1c4a2a;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.rstBtn:hover{
+text-decoration: underline;
+}
+
+.filterCategory{
+margin-bottom: 20px;
+border: 1px solid #1c4a2a1f;
+border-radius: 10px;
+padding: 4% 4%;
+}
+
+.filterCategory h3{
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.filterValues{
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.filterValues input[type="checkbox"], .filterValues input[type='radio']{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filterValues label{
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+.applyFilter{
+    width: 100%;
+    font-size: large;
+    padding: 3% 0;
+    margin-bottom: 8%;
+    background-color: #1c4a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.applyFilter:hover{
+    background-color: #1c4a2af6;
+}
+
+@media screen and (max-width: 1200px){
+    .filterDiv{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .filterCategory{
+        padding: 6% 6%;
+    }
+}

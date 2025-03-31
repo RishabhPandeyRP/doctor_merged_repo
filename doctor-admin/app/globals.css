@@ -1,0 +1,31 @@
+:root {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+button {
+  font-family: inherit; /* Inherit from parent */
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.layout-content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: fit-content;
+}

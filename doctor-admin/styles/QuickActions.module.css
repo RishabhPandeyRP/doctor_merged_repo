@@ -1,0 +1,127 @@
+.quickDiv{
+    border: 0px solid red;
+    width: 47%;
+    height: 90%;
+}
+
+.appStat{
+    border: 0px solid #1c4a2a;
+    /* background-color: #1c4a2a; */
+    color: #1c4a2a;
+    /* display: flex;
+    justify-content: space-between; */
+    /* padding: 2% 5%; */
+    /* border-radius: 10px; */
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0% auto;
+    margin-bottom: 4%;
+    letter-spacing: 1px;
+    /* height: 20%; */
+}
+
+.appStat hr{
+  margin-top: 0.5%;
+  color: #1c4a2a;
+}
+
+.quickNavs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.createDoc{
+    border: 0px solid red;
+    width: 47%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4% 0;
+    background-color: rgb(231, 238, 252);
+    cursor: pointer;
+}
+
+
+.iconContainer{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.text{
+    color: rgb(86, 86, 196);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.manageApp{
+    border: 0px solid red;
+    width: 47%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4% 0;
+    background-color: rgb(231, 252, 233);
+    cursor: pointer;
+}
+
+.manageText{
+    color: rgb(86, 196, 99);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    .appStat{
+     font-size: 26px;
+    }
+
+    .createDoc , .manageApp{
+        width: 70%;
+    }
+
+    .text{
+        font-size: 18px;
+        /* color: #373737; */
+    }
+    
+    .manageText{
+        font-size: 14px;
+        /* color: #8c8c8c; */
+    }
+
+    .quickNavs{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+   }
+
+
+   @media screen and (max-width: 480px) {
+    .appStat{
+     font-size: 24px;
+    }
+
+    
+
+    .text{
+        font-size: 16px;
+        /* color: #373737; */
+    }
+    
+    .manageText{
+        font-size: 10px;
+        /* color: #8c8c8c; */
+    }
+   }

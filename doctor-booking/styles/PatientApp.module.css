@@ -1,0 +1,146 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 67.3%;
+  }
+  
+  .header {
+    background-color: #1c4a2a;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .newAppointmentBtn {
+    background-color: #ffffff;
+    color: #1c4a2a;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .newAppointmentBtn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .appointmentsContainer {
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filterBar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .filterStatus {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .searchBox {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .appointmentsList {
+    min-height: 100px;
+  }
+  
+  .appointmentCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+  }
+  
+  .appointmentCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointmentDate {
+    font-weight: bold;
+    color: #1c4a2a;
+    margin-bottom: 5px;
+  }
+  
+  .appointmentTime {
+    color: #5a5a5a;
+    margin-bottom: 10px;
+  }
+  
+  .appointmentDetails {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .appointmentLocation {
+    color: #5a5a5a;
+  }
+  
+  .appointmentStatus {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .statusConfirmed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .statusPending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .statusCancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+  }
+  
+  .noAppointments {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+  }
+  
+  @media (max-width: 600px) {
+    .filterBar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .searchBox {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }

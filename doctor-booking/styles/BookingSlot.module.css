@@ -1,0 +1,111 @@
+.slotDiv{
+border: 0px solid red;
+box-sizing: border-box;
+width: 100%;
+display: flex;
+height: 95%;
+}
+
+.slotLeft{
+    border: 0px solid green;
+    box-sizing: border-box;
+    width: 45%;
+    height: 100%;
+    background-color: #1c4a2a;
+    color: white;
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+.leftTitle{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.leftDesc{
+    font-size: 17px;
+    font-weight:200;
+}
+
+.slotRight{
+    border: 0px solid red;
+    width: 55%;
+    height: 100%;
+    background-image: url("../public/slotImg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1200px) {
+    .leftTitle {
+      font-size: 45px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .leftTitle {
+      font-size: 38px;
+    }
+    
+    .leftDesc {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slotDiv {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .slotLeft {
+      width: 100%;
+      padding: 10% 10%;
+      gap: 50px;
+    }
+    
+    .slotRight {
+      width: 100%;
+      height: fit-content;
+    }
+    
+    .leftTitle {
+      font-size: 36px;
+      text-align: center;
+    }
+    
+    .leftDesc {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .slotLeft {
+      padding: 10% 5%;
+    }
+    
+    .leftTitle {
+      font-size: 30px;
+    }
+    
+    .leftDesc {
+      font-size: 14px;
+    }
+    
+    .slotRight {
+        height: fit-content;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .leftTitle {
+      font-size: 26px;
+    }
+    
+    .slotRight {
+        height: fit-content;
+    }
+  }

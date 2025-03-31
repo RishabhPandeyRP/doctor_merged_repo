@@ -1,0 +1,348 @@
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 0;
+    border: 0px solid green;
+  }
+  
+  .main {
+    padding: 40px 0;
+    border: 0px solid red;
+    font-family: var(--font-montserrat)
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+    /* color: #1c4a2a; */
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+
+  .search{
+    border: 0px solid red;
+    margin: 20% auto;
+    margin-top: 19%;
+  }
+  .searchSection {
+    margin-bottom: 30px;
+  }
+  
+  .searchWrapper {
+    display: flex;
+    max-width: 94%;
+    margin: 0 auto;
+  }
+  
+  .searchInput {
+    flex: 1;
+    padding: 20px 20px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .searchInput:focus {
+    border-color: #4299e1;
+  }
+  
+  .searchButton {
+    padding: 0 25px;
+    background-color: #1c4a2a;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .searchButton:hover {
+    background-color: #3182ce;
+  }
+  
+
+  .doctorContent{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .doctorTitle{
+    width: fit-content;
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  .doctorDesc{
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8C8C8C;
+  }
+
+  .contentSectionInner {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .filtersContainer {
+    width: 25%;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filtersHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filtersHeader h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #2d3748;
+  }
+  
+  .resetButton {
+    background: none;
+    border: none;
+    color: #1c4a2a;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+  .resetButton:hover {
+    text-decoration: underline;
+  }
+  
+  .filterGroup {
+    margin-bottom: 25px;
+  }
+  
+  .filterGroup h3 {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .filterOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filterOption input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .filterOption label {
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+  }
+  
+  .doctorsContainer {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .doctorCard {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .doctorCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+.doctorImageContainer {
+    height: 180px;
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .doctorImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #cbd5e0;
+  }
+  
+  .doctorInfo {
+    padding: 20px;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doctorInfo h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #2d3748;
+    width: fit-content;
+    /* height: 100px; */
+    border: 0px solid red;
+  }
+  
+  .specialization {
+    color: #4a5568;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .doctorMeta {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .experience {
+    font-size: 14px;
+    color: #718096;
+  }
+  
+  .rating {
+    color: #f6ad55;
+    letter-spacing: 2px;
+    border: 0px solid red;
+  }
+  
+  .ratingBox{
+    width: 90%;
+    margin: 0% auto;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5%;
+    border: 0px solid red;
+  }
+  .diseases {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    width: 68%;
+  }
+  
+  .appointmentButton {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 0;
+  }
+  
+  
+  .noResults {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    color: #4a5568;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    gap: 8px;
+    border: 0px solid red;
+  }
+  
+  .paginationButton {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .paginationButton:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .paginationButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .activePage {
+    color: #1c4a2a;
+    border-color: #1c4a2a;
+  }
+  
+  .paginationEllipsis {
+    margin: 0 8px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .contentSection {
+      flex-direction: column;
+    }
+    
+    .filtersContainer {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .doctorsContainer {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchWrapper {
+      flex-direction: column;
+    }
+    
+    .searchInput {
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .searchButton {
+      border-radius: 8px;
+      padding: 12px;
+    }
+    
+    .doctorsContainer {
+      grid-template-columns: 1fr;
+    }
+  }

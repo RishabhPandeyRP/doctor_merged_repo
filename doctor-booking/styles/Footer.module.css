@@ -1,0 +1,53 @@
+.footerDiv{
+    width: 100%;
+    box-sizing: border-box;
+    height: 90px;
+    padding: 5px 2%;
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    font-size: 16px;
+    font-weight: 500;
+    color: #8c8c8c;
+}
+
+.reachOut{
+    display: flex;
+    width: 5%;
+    justify-content: space-between;
+}
+
+.phone , .whatsapp{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width:1024px){
+
+    .footerDiv{
+        height: 85px;
+    }
+.brand{
+    font-size: 15px;
+}
+.reachOut{
+    width: 9%;
+}
+}
+
+@media screen and (max-width:768px){
+    .footerDiv{
+        height: 80px;
+    }
+    .brand{
+        font-size: 13px;
+    }
+    .reachOut{
+        width: 12%;
+    }
+    }

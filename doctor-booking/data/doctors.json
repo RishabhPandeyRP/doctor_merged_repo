@@ -1,0 +1,199 @@
+[
+  {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "specialization": "Cardiologist",
+      "experience": "15+ years",
+      "rating": 5,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Heart Disease", "Hypertension", "Arrhythmia"],
+      "location": {
+          "id": 1,
+          "name": "New York City Hospital"
+      },
+      "appointment_slots": [
+          { "id": 101, "date": "2024-03-21", "slot": "10:00 AM", "is_booked": false },
+          { "id": 102, "date": "2024-03-21", "slot": "11:30 AM", "is_booked": true },
+          { "id": 103, "date": "2024-03-22", "slot": "02:00 PM", "is_booked": false }
+      ],
+      "appointments": [
+          { "id": 201, "user_id": 501, "type": "video", "date": "2024-03-21", "time": "11:30 AM", "location": "New York City Hospital" }
+      ]
+  },
+  {
+      "id": 2,
+      "name": "Dr. Michael Chen",
+      "specialization": "Neurologist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Alzheimer's", "Parkinson's", "Epilepsy"],
+      "location": {
+          "id": 2,
+          "name": "San Francisco Medical Center"
+      },
+      "appointment_slots": [
+          { "id": 104, "date": "2024-03-21", "slot": "08:30 AM", "is_booked": false },
+          { "id": 105, "date": "2024-03-21", "slot": "10:45 AM", "is_booked": false },
+          { "id": 106, "date": "2024-03-23", "slot": "03:00 PM", "is_booked": true }
+      ],
+      "appointments": [
+          { "id": 202, "user_id": 502, "type": "physical", "date": "2024-03-23", "time": "03:00 PM", "location": "San Francisco Medical Center" }
+      ]
+  },
+  {
+      "id": 3,
+      "name": "Dr. Emily Williams",
+      "specialization": "Dermatologist",
+      "experience": "5-10 years",
+      "rating": 4,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Eczema", "Psoriasis", "Skin Cancer"],
+      "location": {
+          "id": 3,
+          "name": "Los Angeles Skin Clinic"
+      },
+      "appointment_slots": [
+          { "id": 107, "date": "2024-03-21", "slot": "09:00 AM", "is_booked": false },
+          { "id": 108, "date": "2024-03-22", "slot": "01:00 PM", "is_booked": true }
+      ],
+      "appointments": [
+          { "id": 203, "user_id": 503, "type": "video", "date": "2024-03-22", "time": "01:00 PM", "location": "Los Angeles Skin Clinic" }
+      ]
+  },
+  {
+      "id": 4,
+      "name": "Dr. James Rodriguez",
+      "specialization": "Orthopedic Surgeon",
+      "experience": "15+ years",
+      "rating": 5,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Arthritis", "Joint Pain", "Fractures"],
+      "location": {
+          "id": 4,
+          "name": "Chicago Ortho Care"
+      },
+      "appointment_slots": [
+          { "id": 109, "date": "2024-03-21", "slot": "10:15 AM", "is_booked": false }
+      ],
+      "appointments": []
+  },
+  {
+      "id": 5,
+      "name": "Dr. Lisa Patel",
+      "specialization": "Pediatrician",
+      "experience": "3-5 years",
+      "rating": 3,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Asthma", "Common Cold", "Childhood Obesity"],
+      "location": {
+          "id": 5,
+          "name": "Seattle Children's Hospital"
+      },
+      "appointment_slots": [],
+      "appointments": []
+  },
+  {
+      "id": 6,
+      "name": "Dr. Robert Wilson",
+      "specialization": "Psychiatrist",
+      "experience": "10-15 years",
+      "rating": 4,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Depression", "Anxiety", "PTSD"],
+      "location": {
+          "id": 6,
+          "name": "Boston Mental Health Center"
+      },
+      "appointment_slots": [
+          { "id": 110, "date": "2024-03-23", "slot": "12:30 PM", "is_booked": false }
+      ],
+      "appointments": []
+  },
+  {
+      "id": 7,
+      "name": "Dr. Olivia Brown",
+      "specialization": "Endocrinologist",
+      "experience": "8 years",
+      "rating": 4,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Diabetes", "Thyroid Disorders"],
+      "location": {
+          "id": 7,
+          "name": "Houston Endocrinology Clinic"
+      },
+      "appointment_slots": [],
+      "appointments": []
+  },
+  {
+      "id": 8,
+      "name": "Dr. Daniel Green",
+      "specialization": "Pulmonologist",
+      "experience": "12 years",
+      "rating": 5,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Asthma", "Lung Cancer"],
+      "location": {
+          "id": 8,
+          "name": "Miami Lung Care Center"
+      },
+      "appointment_slots": [],
+      "appointments": []
+  },
+  {
+      "id": 9,
+      "name": "Dr. Sophia Martinez",
+      "specialization": "Ophthalmologist",
+      "experience": "6 years",
+      "rating": 4,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Cataracts", "Glaucoma"],
+      "location": {
+          "id": 9,
+          "name": "Phoenix Eye Clinic"
+      },
+      "appointment_slots": [],
+      "appointments": []
+  },
+  {
+      "id": 10,
+      "name": "Dr. William Harris",
+      "specialization": "Gastroenterologist",
+      "experience": "14 years",
+      "rating": 5,
+      "gender": "male",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Ulcer", "IBS"],
+      "location": {
+          "id": 10,
+          "name": "Dallas Gastro Care"
+      },
+      "appointment_slots": [],
+      "appointments": []
+  },
+  {
+      "id": 11,
+      "name": "Dr. Amelia Thompson",
+      "specialization": "Oncologist",
+      "experience": "18 years",
+      "rating": 5,
+      "gender": "female",
+      "imageUrl": "/doctor-placeholder.jpg",
+      "diseases": ["Breast Cancer", "Lung Cancer"],
+      "location": {
+          "id": 11,
+          "name": "Washington Cancer Institute"
+      },
+      "appointment_slots": [],
+      "appointments": []
+  }
+]

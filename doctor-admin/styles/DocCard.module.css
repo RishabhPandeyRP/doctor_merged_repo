@@ -1,0 +1,161 @@
+.docCardDiv{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 0px solid green;
+    width: 300px;
+    height: 350px;
+    margin: 1% 0;
+    border: 1px solid rgb(225, 225, 225);
+    }
+    
+    .docCardDiv:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    
+    .docImgContainer{
+    height: 150px;
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid green;
+    }
+    
+    .docImg{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #cbd5e0;
+    border: 0px solid green;
+    overflow: hidden;
+    }
+
+    .docImg{
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .docInfo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .docInfo h3{
+        margin: 0 0 5px 0;
+        font-size: 18px;
+        color: #2d3748;
+        width: fit-content;
+    }
+    
+    .docDetails{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 12px;
+    }
+    
+    .docSpec{
+    color: #4a5568;
+    font-size: 14px;
+    margin-bottom: 12px;
+    }
+    
+    .docExp{
+    font-size: 14px;
+    color: #718096;
+    }
+    
+    .docRatingBox{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5%;
+    }
+    
+    .docRating{
+    color: #f6ad55;
+    letter-spacing: 2px;
+    }
+    
+    .docDisease{
+    font-size: 14px;
+    color: #4a5568;
+    /* margin-bottom: 15px; */
+    margin: 7% 0;
+    line-height: 1.5;
+    width: fit-content;
+    text-align: center;
+    border: 0px solid red;
+    }
+    
+    .docBookBtn{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 0;
+    }
+    
+    .docBookBtn:hover{
+        background-color: #f0f0f0;
+    }
+    
+    @media (max-width: 480px) {
+        .docImgContainer {
+            height: 150px;
+        }
+        
+        .docImg {
+            width: 100px;
+            height: 100px;
+        }
+    
+        .docDetails {
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .docInfo h3 {
+            font-size: 16px;
+        }
+    }
+    
+    
+    @media (max-width: 768px) {
+        .docInfo {
+            padding: 15px;
+        }
+        
+        .docDisease {
+            font-size: 13px;
+        }
+        
+        .docBookBtn {
+            font-size: 14px;
+            padding: 8px 0;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .docRatingBox {
+            flex-direction: column;
+            align-items: center;
+        }
+    }

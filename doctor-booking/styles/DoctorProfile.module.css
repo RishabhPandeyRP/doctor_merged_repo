@@ -1,0 +1,193 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .main {
+    padding: 40px 0;
+  }
+  
+  .profileHeader {
+    background-color: #1c4a2a;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(28, 74, 42, 0.15);
+  }
+  
+  .profileHeaderContent {
+    text-align: center;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .subheading {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    margin: 10px 0 0;
+  }
+  
+  .profileContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .profileCard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .profileImageSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .profileImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(28, 74, 42, 0.15);
+    border: 4px solid #1c4a2a;
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .ratingText {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .doctorName {
+    color: #1c4a2a;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .infoRow {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .infoLabel {
+    font-weight: 600;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .infoValue {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .diseasesTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .diseaseTag {
+    background-color: rgba(28, 74, 42, 0.1);
+    color: #1c4a2a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .aboutText {
+    margin: 0;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .bookingSection {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bookingTitle {
+    color: white;
+    background-color: #1c4a2a;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1% 0;
+    border: none;
+    border-radius: 10px;
+    /* margin: 0 0 20px; */
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  }
+  .bookingTitle:hover{
+    background-color: #1c4a2af7;
+    transform: translateY(-5%);
+  }
+  
+  
+  @media (min-width: 768px) {
+    .profileCard {
+      flex-direction: row;
+    }
+    
+    .profileImageSection {
+      flex: 0 0 220px;
+      margin-right: 15px;
+    }
+    
+    .profileInfo {
+      flex: 1;
+    }
+    
+    .doctorName {
+      text-align: left;
+    }
+    
+    .infoRow {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .infoLabel {
+      min-width: 120px;
+      margin-right: 10px;
+    }
+  }
