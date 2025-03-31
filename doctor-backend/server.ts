@@ -17,7 +17,7 @@
     app.use(express.json())
 
     app.use(cors({
-        origin:["https://doctor-admin-alpha-ten.vercel.app" , "https://doctor-appointment-frontend-sigma.vercel.app" , "http://localhost:3000" , "http://localhost:3001" , "https://doctor-merged-repo.vercel.app"],
+        origin:["https://doctor-admin-alpha-ten.vercel.app" , "https://doctor-appointment-frontend-sigma.vercel.app" , "http://localhost:3000" , "http://localhost:3001" , "https://doctor-merged-repo.vercel.app" , "https://doctor-merged-repo-eoql.vercel.app"],
         credentials:true
     }))
 
