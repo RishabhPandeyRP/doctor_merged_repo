@@ -11,7 +11,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID as string,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
-            callbackURL: "https://doctor-backend-0uad.onrender.com/auth/google/callback",
+            callbackURL: "https://doctor-merged-repo.onrender.com/auth/google/callback",
         },
         async (accessToken, refreshToken, profile, done) => {
             try {
