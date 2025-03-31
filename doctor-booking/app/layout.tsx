@@ -4,13 +4,13 @@ import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/context/AppContext";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 
-// export const metadata:Metadata = {
-//   title: "Medcare",
-//   description: "Book appointment with your favourite doctor",
-//   icons: "/favicon.svg",
-// };
+export const metadata:Metadata = {
+  title: "Medcare",
+  description: "Book appointment with your favourite doctor",
+  icons: "/favicon.svg",
+};
 
 const montserrat = Montserrat({
   subsets: ["latin"],
