@@ -10,7 +10,25 @@ interface FilterParams{
     isFiltering:boolean
 }
 
+type ExperienceValues = "15%2B years" | "10-15 years" | "5-10 years" | "3-5 years" | "1-3 years" | "0-1 years";
+type DisplayTextMap = {
+    [key in ExperienceValues]?: string;
+};
+const exp15 : DisplayTextMap  = {
+    "15%2B years":"15+ years"
+}
+
+
+
 const Filter = ({onFilterChange , onFilterReset , filters , printFilters , isFiltering} : FilterParams)=>{
+
+    const getDisplayedValues = (value:string):string=>{
+        if (value ) {
+            return exp15[value as ExperienceValues] || value;
+        }
+        return value;
+    }
+
     return(
         <div className={styles.filterDiv}> 
             <div className={styles.filterHeaders}>
@@ -48,7 +66,7 @@ const Filter = ({onFilterChange , onFilterReset , filters , printFilters , isFil
             <div className={styles.filterCategory}>
                 <h3>Experience</h3>
                 {
-                    ["15+ years" , "10-15 years" , "5-10 years" , "3-5 years" , "1-3 years" , "0-1 years"].map((exp , index) =>(
+                    ["15%2B years" , "10-15 years" , "5-10 years" , "3-5 years" , "1-3 years" , "0-1 years"].map((exp , index) =>(
                         <div className={styles.filterValues} key={index}>
                             <input type="radio"
                             name="exp"
@@ -57,7 +75,7 @@ const Filter = ({onFilterChange , onFilterReset , filters , printFilters , isFil
                             onChange={()=>onFilterChange('experience' , exp)} 
                             />
                             <label htmlFor={`exp-${exp}`}>
-                                {exp}
+                                {getDisplayedValues(exp)}
                             </label>
                         </div>
                     ))

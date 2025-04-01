@@ -54,6 +54,7 @@ const Doctors = () => {
 
             console.log("doctors from fetcher : ", response.data?.docname)
             setFilterDoc(Array.isArray(response.data?.docname.doctors) ? response.data?.docname.doctors : [])
+            setDoctor(Array.isArray(response.data?.docname.doctors) ? response.data?.docname.doctors : [])
             setLoading(false)
 
         } catch (error: unknown) {
@@ -105,6 +106,7 @@ const Doctors = () => {
 
     const paginatedDoc = async () => {
         try {
+            console.log("filters are : " , filter)
             setIsFiltering(true)
             const queryParams = { ...filter, search: termSearchedRef.current }
             console.log("all filters are ", queryParams)
