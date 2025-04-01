@@ -61,16 +61,17 @@ const doctorController = {
     getDocPaginated : async(req:Request , res:Response)=>{
         try {
             const {page = "1" , limit = "6" , search , rating ,experience , gender} = req.query
-
+            console.log("experience before parsing " , experience)
             const parsedPage = parseInt(page as string)
             const parsedLimit = parseInt(limit as string)
 
             const parsedRating : string[] = Array.isArray(rating) ? rating.map(item => item as string).filter(item => item.trim() !== "")  : []
 
-            const parsedExp : string[] = Array.isArray(experience) ? experience.map(item => item as string).filter(item => item.trim() !== "") : []
+            const parsedExp : string[] = Array.isArray(experience) ? experience.map(item => decodeURIComponent(item as string)).filter(item => item.trim() !== "") : []
 
             const parsedGender : string[] = Array.isArray(gender) ? gender.map(item => item as string).filter(item => item.trim() !== "") : []
 
+            console.log("parsed exp is : " , parsedExp)
             const response = await doctorService.getDocPaginated(parsedPage , parsedLimit , search as string , parsedRating , parsedExp , parsedGender)
 
             if(response.success){

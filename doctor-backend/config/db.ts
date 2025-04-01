@@ -21,5 +21,5 @@ pool.query("select now()" , (err , res)=>{
 
 export default {
     query: (text: string, params?: any[]) => pool.query(text, params),
-  };
+};
   
